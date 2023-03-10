@@ -10,9 +10,11 @@ let shadowresult=document.querySelector("#shadowresult");
 shadowresult.value=0
 function add(){
     if(shadowresult.value!=count_result.value){
-        count_post.innerHTML=count_post.innerHTML+"+";
         table_inputvalue.style.display="block";
         table_inputmulti.style.display="block";
+        count_num.value=0;
+        count_multi.value=0;
+        count_post.innerHTML=count_post.innerHTML+"+";
         shadowresult.innerHTML=count_post.innerHTML;
         shadowresult.value=count_result.value;
     }else{
@@ -40,6 +42,8 @@ function caltotal(){
         count_result.value=parseInt(count_multi.value)+parseInt(count_result.value);
         count_multi.value=0;
         count_post.innerHTML=count_post.innerHTML+"<br/> ="+count_result.value;
+        table_inputvalue.style.display="none";
+        table_inputmulti.style.display="none";
     }
 }
 function inputmultiple(Multiples){
@@ -49,20 +53,19 @@ function inputmultiple(Multiples){
         count_num.value=0;
         table_inputvalue.style.display="none";
         table_inputmulti.style.display="none";
-        count_result.value=parseInt(count_multi.value)+parseInt(count_result.value);
-        count_multi.value=0;
+        count_result.value=parseInt(count_multi.value)+parseInt(shadowresult.value);
     }else{
         alert("未輸入數量")
     }
 }
 function inputnum(num){
     numin=String(num)
-    if(count_multi.value==0){
-        count_post.innerHTML=count_post.innerHTML+numin;
-    }
+    count_post.innerHTML=count_post.innerHTML+numin;
     if(count_num.value==0){
         count_num.value=numin;
     }else{
         count_num.value=count_num.value+numin;
     }
+    count_multi.value=parseInt(count_num.value);
+    count_result.value=parseInt(shadowresult.value)+parseInt(count_num.value)
 }
