@@ -44,7 +44,7 @@ input{
 }
 .inputvalue{
     cursor: pointer;
-    height:40px;
+    height:35px;
     width: 90px;
     background-image: radial-gradient(ellipse, #e3e9f3 , #e0e4eb 3px, #98afdd 80%, #88a5da 20%);
 }
@@ -73,15 +73,15 @@ input{
         justify-content: center;
     }
     #table_post{
-        height: 120px;
+        height: 100px;
         }
     #table_inputvalue{
-        height: 230px;
+        height: 200px;
     }
     #table_inputmulti{
-        height: 230px;
+        height: 200px;
     }
     #table_inputresult{
-        height: 120px;
+        height: 100px;
     }
 }
