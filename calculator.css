@@ -10,6 +10,7 @@ table{
     width: 350px;
 }
 input{
+    width: 250px;
     font-size: 20px;
     background-color: #ffffff;
     font-family: "Microsoft JhengHei";
@@ -63,7 +64,7 @@ input{
     background-image: radial-gradient(ellipse, #ecc412 , #6efc52 3px, #aefc9e 60%, #beffc1 40%);
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 750px){
     table{
         font-size: 30px;
     }
