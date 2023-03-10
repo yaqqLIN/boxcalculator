@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(187, 187, 187);
+}
+table{
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fff3bd;
+    border: 5px grey ridge;
+    width: 300px;
+}
+#count_post{
+    height: 60px;
+}
+#count_num{
+    height: 25px;
+}
+#count_multi{
+    height: 25px;
+}
+#count_result{
+    height: 25px;
+}
+#totalrow{
+    height: 40px;
+}
+#total{
+    background-image: radial-gradient(ellipse, #ecc412 , #6efc52 3px, #aefc9e 60%, #beffc1 40%);
+    color: rgb(78, 78, 78);
+    padding: 8px;
+}
+.inputvalue{
+    height:40px;
+    width: 90px;
+    background-image: radial-gradient(ellipse, #e3e9f3 , #e0e4eb 3px, #98afdd 80%, #88a5da 20%);
+}
+.inputmulti{
+    height:30px;
+    width: 90px;
+    background-image: radial-gradient(ellipse, #ecc412 , #fc5252 3px, #fc9e9e 60%, #ffbebe 40%);
+    color: rgb(78, 78, 78);
+}
+.inputresult{
+    height:30px;
+    width: 90px;
+    background-image: radial-gradient(ellipse, #ecc412 , #6efc52 3px, #aefc9e 60%, #beffc1 40%);
+}
