@@ -11,7 +11,10 @@ table{
     width: 300px;
 }
 #count_post{
+    width: 290px;
     height: 60px;
+    word-wrap:break-word;
+    word-break: break-all;
 }
 #count_num{
     height: 25px;
