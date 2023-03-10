@@ -7,68 +7,75 @@
     <title>calculator</title>
     <link rel="stylesheet" type="text/css" href="calculator.css">
     <link rel="icon" href="logo.ico" type="image/x-icon"/>
+    
 </head>
 <body>
-    <h3 style="text-decoration: underline;color:darkblue">藥局盤點計算機</h3>
+    <h1 style="text-decoration: underline;color:darkblue ;"><center>藥局盤點計算機</center></h1>
     <div id="shadowresult" style="display: none;" value=0></div>
-    <table id="table-count_post">
-        <tr ><td colspan="5" id="count_post" value=""></td></tr>
-    </table>
-    <table id="table_inputvalue">
-            <tr>
-                <td class="inputvalue" onclick="inputnum(7)">7</td>
-                <td class="inputvalue" onclick="inputnum(8)">8</td>
-                <td class="inputvalue" onclick="inputnum(9)">9</td>
-            </tr>
-            <tr>
-                <td class="inputvalue" onclick="inputnum(4)">4</td>
-                <td class="inputvalue" onclick="inputnum(5)">5</td>
-                <td class="inputvalue" onclick="inputnum(6)">6</td>
-            </tr>
-            <tr>
-                <td class="inputvalue" onclick="inputnum(1)">1</td>
-                <td class="inputvalue" onclick="inputnum(2)">2</td>
-                <td class="inputvalue" onclick="inputnum(3)">3</td>
-            </tr>
-            <tr>
-                <td colspan="5" class="inputvalue" onclick="inputnum(0)">0</td>
-            </tr>
-            <tr>
-                <td colspan="5"><input type="text" id="count_num" value=0 disabled/></td>
-            </tr>
-        </tbody>
-    </table>
-    <table id="table_inputmulti">
-        <tr>
-            <td class="inputmulti" onclick="inputmultiple(28)">x 28</td>
-            <td class="inputmulti" onclick="inputmultiple(30)">x 30</td>
-            <td class="inputmulti" onclick="inputmultiple(100)">x 100</td>
-        </tr>
-        <tr>
-            <td class="inputmulti" onclick="inputmultiple(14)">x 14</td>
-            <td class="inputmulti" onclick="inputmultiple(15)">x 15</td>
-            <td class="inputmulti" onclick="inputmultiple(1000)">x 1000</td>
-        </tr>
-        <tr>
-            <td colspan="5">
-                <span class="inputmulti" onclick="inputmultiple(7)" style="padding: 3px;">x 7</span>
-                <input type="text" id="count_multi" value=0 disabled/>
-            </td>
-        </tr>
-    </table>
-    <table id="table_inputresult">
-        <tr>
-            <td class="inputresult" onclick="add()">+</td>
-            <td class="inputresult" onclick="clearin()">C</td>
-            <td class="inputresult" onclick="reset()">reset</td>
-        </tr>
-        <tr>
-            <td colspan="5"  id="totalrow">
-                <span id="total" onclick="caltotal()">=</span>
-                <input type="text" id="count_result" value=0 disabled/>
-            </td>
-        </tr>
-        <script src="calculator.js"></script>
-    </table>
+    <div id="blockall">
+        <div id="block1">
+            <table id="table_post">
+                <tr ><td colspan="5" id="count_post" value=""></td></tr>
+            </table>
+            <table id="table_inputvalue">
+                    <tr>
+                        <td class="inputvalue" onclick="inputnum(7)">7</td>
+                        <td class="inputvalue" onclick="inputnum(8)">8</td>
+                        <td class="inputvalue" onclick="inputnum(9)">9</td>
+                    </tr>
+                    <tr>
+                        <td class="inputvalue" onclick="inputnum(4)">4</td>
+                        <td class="inputvalue" onclick="inputnum(5)">5</td>
+                        <td class="inputvalue" onclick="inputnum(6)">6</td>
+                    </tr>
+                    <tr>
+                        <td class="inputvalue" onclick="inputnum(1)">1</td>
+                        <td class="inputvalue" onclick="inputnum(2)">2</td>
+                        <td class="inputvalue" onclick="inputnum(3)">3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="inputvalue" onclick="inputnum(0)">0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><input type="text" id="count_num" value=0 disabled/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="block2">
+            <table id="table_inputmulti">
+                <tr>
+                    <td class="inputmulti" onclick="inputmultiple(28)">x 28</td>
+                    <td class="inputmulti" onclick="inputmultiple(30)">x 30</td>
+                    <td class="inputmulti" onclick="inputmultiple(100)">x 100</td>
+                </tr>
+                <tr>
+                    <td class="inputmulti" onclick="inputmultiple(14)">x 14</td>
+                    <td class="inputmulti" onclick="inputmultiple(15)">x 15</td>
+                    <td class="inputmulti" onclick="inputmultiple(1000)">x 1000</td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <span class="inputmulti" onclick="inputmultiple(7)" style="padding: 3px;">x 7</span>
+                        <input type="text" id="count_multi" value=0 disabled/>
+                    </td>
+                </tr>
+            </table>
+            <table id="table_inputresult">
+                <tr>
+                    <td class="inputresult" onclick="add()">+</td>
+                    <td class="inputresult" onclick="clearin()">C</td>
+                    <td class="inputresult" onclick="reset()">reset</td>
+                </tr>
+                <tr>
+                    <td colspan="5"  id="totalrow">
+                        <span id="total" onclick="caltotal()">=</span>
+                        <input type="text" id="count_result" value=0 disabled/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
 </body>
 </html>
