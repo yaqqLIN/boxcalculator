@@ -9,7 +9,7 @@ let table_inputresult=document.querySelector("#table_inputresult");
 let shadowresult=document.querySelector("#shadowresult");
 shadowresult.value=0
 function add(){
-    if(shadowresult.value!=count_result.value){
+    if(shadowresult.innerHTML!=count_post.innerHTML){
         table_inputvalue.style.display="block";
         table_inputmulti.style.display="block";
         count_num.value=0;
@@ -39,7 +39,7 @@ function caltotal(){
     if(count_result.value==0){
         alert("未輸入數量");
     }else{
-        count_result.value=parseInt(count_multi.value)+parseInt(count_result.value);
+        count_result.value=parseInt(count_multi.value)+parseInt(shadowresult.value);
         count_multi.value=0;
         count_post.innerHTML=count_post.innerHTML+"<br/> ="+count_result.value;
         table_inputvalue.style.display="none";
