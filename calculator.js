@@ -10,8 +10,8 @@ let shadowresult=document.querySelector("#shadowresult");
 shadowresult.value=0
 function add(){
     if(shadowresult.innerHTML!=count_post.innerHTML){
-        table_inputvalue.style.display="block";
-        table_inputmulti.style.display="block";
+        table_inputvalue.style="pointer-events:auto;opacity:1";
+        table_inputmulti.style="pointer-events:auto;opacity:1";
         count_num.value=0;
         count_multi.value=0;
         count_post.innerHTML=count_post.innerHTML+"+";
@@ -22,8 +22,8 @@ function add(){
     }
 }
 function clearin(){
-    table_inputvalue.style.display="block";
-    table_inputmulti.style.display="block";
+    table_inputvalue.style="pointer-events:auto;opacity:1";
+    table_inputmulti.style="pointer-events:auto;opacity:1";
     count_num.value=0;
     count_multi.value=0;
     count_post.innerHTML=shadowresult.innerHTML;
@@ -42,8 +42,8 @@ function caltotal(){
         count_result.value=parseInt(count_multi.value)+parseInt(shadowresult.value);
         count_multi.value=0;
         count_post.innerHTML=count_post.innerHTML+"<br/> ="+count_result.value;
-        table_inputvalue.style.display="none";
-        table_inputmulti.style.display="none";
+        table_inputvalue.style="pointer-events:none;opacity:0.5";
+        table_inputmulti.style="pointer-events:none;opacity:0.5";
     }
 }
 function inputmultiple(Multiples){
@@ -51,8 +51,8 @@ function inputmultiple(Multiples){
     if(count_num.value!=0){
         count_post.innerHTML=count_post.innerHTML+"x"+String(Multiples);
         count_num.value=0;
-        table_inputvalue.style.display="none";
-        table_inputmulti.style.display="none";
+        table_inputvalue.style="pointer-events:none;opacity:0.5";
+        table_inputmulti.style="pointer-events:none;opacity:0.5";
         count_result.value=parseInt(count_multi.value)+parseInt(shadowresult.value);
     }else{
         alert("未輸入數量")
