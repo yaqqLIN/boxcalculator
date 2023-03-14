@@ -102,3 +102,7 @@ input{
     width: 110px;
     background-image: radial-gradient(ellipse, #ecc412 , #6efc52 3px, #aefc9e 60%, #beffc1 40%);
 }
+.inputmulti:hover,.inputvalue:hover,.inputresult:hover,#total:hover{
+    background-image:radial-gradient(ellipse, #cecece , #b4b4b4 3px, #838383 60%, #3d3d3d 40%);
+    color: black;
+}
