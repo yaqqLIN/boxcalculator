@@ -32,7 +32,7 @@ function clearin(){
 }
 function reset(){
     if(confirm("確定全部清除?")){
-        window.location.href=window.location.href;
+        location.reload();
     }
 }
 function caltotal(){
